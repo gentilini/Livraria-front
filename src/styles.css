@@ -8,11 +8,10 @@
   body {
     font-family: 'Be Vietnam Pro', sans-serif;
   }
+
   :root {
-    --primary-color: #605DC8;
-    --secondary-color: #8B89E6;
-    --accent-color: #e8e7fa;
-    --shadow-color: #E8E8E8;
+    --primary-color: #969696;
+    --accent-color: #fafafa;
   }
   
   button.primary {
@@ -23,8 +22,18 @@
     border-radius: 8px;
   }
 
+  .btn:hover {
+    background-color: #777777;
+    border-color: #777777;
+  }
+
+  .btn:focus {
+    background-color: #777777 !important;
+    border-color: #777777 !important;
+}
+
   .bg-primary {
-    background-color: #605DC8 !important; /* Azul claro */
+    background-color: #6542a7 !important; /* Azul claro */
   }
 
   .btn-floating {

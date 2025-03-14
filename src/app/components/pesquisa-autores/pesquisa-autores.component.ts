@@ -40,7 +40,6 @@ export class PesquisaAutoresComponent {
         this.carregarListaAutores();
       },
       (reason) => {
-        this.toastr.error(reason, "Falha!");
         console.log('Modal dismissed with reason:', reason);
       }
     );
