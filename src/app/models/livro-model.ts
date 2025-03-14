@@ -8,7 +8,7 @@ export interface LivroModel {
     titulo: string,
     editora: string,
     edicao: number,
-    anoPublicacao: number,
+    anoPublicacao: string,
     assuntos: number[],
     autores: number[],
     precos: PrecoModel[]
@@ -19,7 +19,7 @@ export interface LivroViewModel{
     titulo: string,
     editora: string,
     edicao: number,
-    anoPublicacao: number,
+    anoPublicacao: string,
     assuntos: AssuntoModel[],
     autores: AutorModel[],
     formasCompra: LivroFormaCompraModel[]

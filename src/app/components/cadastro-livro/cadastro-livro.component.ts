@@ -61,7 +61,7 @@ export class CadastroLivroComponent {
       titulo: [''],
       editora: [''],
       edicao: [0],
-      anoPublicacao: [0],
+      anoPublicacao: [''],
     });
 
     this.carregarListaAutores();

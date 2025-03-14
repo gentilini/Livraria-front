@@ -3,5 +3,5 @@ export interface RelatorioAutoresModel{
     titulo:string,
     editora:string,
     edicao:number,
-    anoPublicacao:number
+    anoPublicacao:string
 }
