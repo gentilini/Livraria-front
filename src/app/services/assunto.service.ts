@@ -94,6 +94,7 @@ export class AssuntoService {
       }
 
       this.obterAssuntos();
+      
     } catch (error) {
       console.error('Erro ao atualizar o assunto', error);
     }
@@ -101,7 +102,7 @@ export class AssuntoService {
 
   async getAssuntos(): Promise<AssuntoModel[]> {
     try {
-      const response = await fetch(`${this.url}assuntos`);
+      const response = await fetch(`${this.url}assunto`);
       
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
@@ -109,8 +110,8 @@ export class AssuntoService {
       
       const data = await response.json();
       
-      if (Array.isArray(data.result)) {
-        return data.result as AssuntoModel[];
+      if (Array.isArray(data)) {
+        return data as AssuntoModel[];
       } else {
         throw new Error('Invalid data format: "result" is not an array');
       }

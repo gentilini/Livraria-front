@@ -32,7 +32,7 @@ export class AutorService {
 
   async getAutores(): Promise<AutorModel[]> {
     try {
-      const response = await fetch(`${this.apiUrl}autores`);
+      const response = await fetch(`${this.apiUrl}autor`);
       
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
@@ -41,8 +41,8 @@ export class AutorService {
       const data = await response.json();
       
       // Verifica se 'result' é um array e retorna ele
-      if (Array.isArray(data.result)) {
-        return data.result as AutorModel[];
+      if (Array.isArray(data)) {
+        return data as AutorModel[];
       } else {
         throw new Error('Invalid data format: "result" is not an array');
       }
